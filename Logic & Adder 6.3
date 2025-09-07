@@ -1,0 +1,19 @@
+module logic6.3 (
+    input  wire DIP1,
+    input  wire DIP2,
+    input  wire DIP3,
+    output wire LED1,
+    output wire LED2,
+    output wire LED3,
+    output wire LED4,
+    output wire LED5
+);
+    wire A = DIP1;
+    wire B = DIP2;
+
+    assign LED1 = A &  B;
+    assign LED2 = A |  B;
+    assign LED3 = A ^  B;
+    assign LED4 = A ~| B;
+    assign LED5 = A ~& B;
+endmodule
